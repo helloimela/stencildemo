@@ -2,6 +2,9 @@ import { Config } from '@stencil/core';
 import { less } from '@stencil/less';
 
 export const config: Config = {
+  bundles:[
+    {components:['cui-alert','cui-content','cui-footer','cui-header','cui-nav-item']}
+  ],
   namespace: 'new-cui-demo',
   globalStyle: 'src/global/app.less',
   outputTargets:[

@@ -8,7 +8,7 @@ The demo is made using [stencil-component-starter](https://github.com/ionic-team
 
 ### Script tag
 
-- Put a script tag similar to this `<script src='https://unpkg.com/new-cui-demo@0.0.2/dist/new-cui-demo.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/new-cui-demo@0.0.3/dist/new-cui-demo.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules

@@ -30,7 +30,13 @@ declare global {
 
   namespace StencilComponents {
     interface CuiAlert {
+      'close': () => void;
+      'content': string;
+      'dismissible': boolean;
       'getClass': (variation: any) => string;
+      'isOpen': () => boolean;
+      'open': boolean;
+      'show': () => void;
       'type': string;
       'variation': string;
     }
@@ -55,6 +61,10 @@ declare global {
   }
   namespace JSXElements {
     export interface CuiAlertAttributes extends HTMLAttributes {
+      'content'?: string;
+      'dismissible'?: boolean;
+      'onOnClose'?: (event: CustomEvent) => void;
+      'open'?: boolean;
       'type'?: string;
       'variation'?: string;
     }
@@ -133,6 +143,8 @@ declare global {
 
   namespace StencilComponents {
     interface CuiHeader {
+      'getGoogleAnalytics': () => void;
+      'monitoring': string;
       'siteUrl': string;
       'titleHeader': string;
     }
@@ -157,6 +169,7 @@ declare global {
   }
   namespace JSXElements {
     export interface CuiHeaderAttributes extends HTMLAttributes {
+      'monitoring'?: string;
       'siteUrl'?: string;
       'titleHeader'?: string;
     }
@@ -192,41 +205,6 @@ declare global {
   namespace JSXElements {
     export interface CuiNavItemAttributes extends HTMLAttributes {
       'location'?: string;
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
-    }
-  }
-
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
-
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
-  interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
-  }
-  interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
     }
   }
 }

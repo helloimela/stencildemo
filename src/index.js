@@ -1,0 +1,7 @@
+import './global/app.less'
+import '../dist/new-cui-demo'
+import '../dist/new-cui-demo/new-cui-demo.global'
+import '../dist/new-cui-demo/new-cui-demo.core'
+import '../dist/new-cui-demo/new-cui-demo.core.pf'
+import '../dist/new-cui-demo/cui-alert'
+import '../dist/new-cui-demo/cui-alert.es5'

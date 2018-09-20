@@ -14,9 +14,12 @@
     "start": "stencil build --dev --watch --serve",
     "test": "jest",
     "test.watch": "jest --watch",
-    "develop": "webpack --mode development --watch"
+    "develop": "webpack --mode development --watch",
+    "production": "webpack --mode production"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/google.analytics": "0.0.39"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -26,6 +29,7 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "jest": "^23.4.2",
+    "less-loader": "^4.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0"

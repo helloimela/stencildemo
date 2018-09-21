@@ -6,17 +6,13 @@
   <title>Stencil Component Starter</title>
   <script type="text/javascript" src="https://d31jnweo1ynb8u.cloudfront.net/build/global/3.1.2-CF/js/corporate-ui.js"></script>
   <script src="/build/new-cui-demo.js"></script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-  <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  </script>
   <link rel="stylesheet" href="/build/new-cui-demo.css">
 </head>
 <body class="app scania">
 
-  <cui-header title-header="Demo page" site-url="#" monitoring="key?default"></cui-header>
+  <cui-header title-header="Demo page" site-url="#"></cui-header>
 
-  <cui-content>
+  <cui-content monitoring="key?default">
     <div class="col-sm-12">
       <h4>Variation: Default</h4>
       <cui-alert open dismissible type="success" content="Well done! You successfully read this important alert message."></cui-alert>
@@ -32,7 +28,7 @@
       <cui-alert type="success" variation='callout' content="Well done! You successfully read this important alert message."></cui-alert>
       <cui-alert open type="info" variation='callout' content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
       <cui-alert dismissible type="warning" variation='callout' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
-      <cui-alert type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
+      <cui-alert open type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
     </div>
   </cui-content>
   <cui-footer sticky>

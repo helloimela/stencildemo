@@ -1,4 +1,4 @@
-import { Component, Prop, Method } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag:'cui-header',
@@ -8,22 +8,6 @@ export class CuiHeader{
 
   @Prop() titleHeader:string;
   @Prop() siteUrl: string;
-  @Prop() monitoring:string;
-
-  @Method()
-  getGoogleAnalytics(){
-    let trackID = this.monitoring.split('?')[1];
-    trackID = (trackID=='default')?'UA-125640614-1':trackID;
-    console.log(trackID);
-    ga('create', trackID, 'auto');
-    ga('send', 'pageview');
-  }
-
-  componentDidLoad(){
-    if(this.monitoring){
-      this.getGoogleAnalytics();
-    }
-  }
 
   render(){
     return(

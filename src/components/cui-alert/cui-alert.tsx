@@ -39,10 +39,12 @@ export class CuiAlert{
 
   componentWillLoad() {
     this._isOpen = this.open;
+      console.log('open alert will loaded');
   }
 
   componentDidLoad(){
     if(this.open){
+      console.log('open alert did loaded');
       ga('send', {
         hitType: 'event',
         eventCategory: 'Component', //the object that user interact with on the page

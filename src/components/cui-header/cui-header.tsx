@@ -12,7 +12,11 @@ export class CuiHeader{
 
   @Method()
   getGoogleAnalytics(){
-
+    let trackID = this.monitoring.split('?')[1];
+    trackID = (trackID=='default')?'UA-125640614-1':trackID;
+    console.log(trackID);
+    ga('create', trackID, 'auto');
+    ga('send', 'pageview');
   }
 
   componentDidLoad(){

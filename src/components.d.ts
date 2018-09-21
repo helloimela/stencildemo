@@ -76,7 +76,8 @@ declare global {
 
   namespace StencilComponents {
     interface CuiContent {
-
+      'getGoogleAnalytics': () => void;
+      'monitoring': string;
     }
   }
 
@@ -99,7 +100,7 @@ declare global {
   }
   namespace JSXElements {
     export interface CuiContentAttributes extends HTMLAttributes {
-
+      'monitoring'?: string;
     }
   }
 }
@@ -143,8 +144,6 @@ declare global {
 
   namespace StencilComponents {
     interface CuiHeader {
-      'getGoogleAnalytics': () => void;
-      'monitoring': string;
       'siteUrl': string;
       'titleHeader': string;
     }
@@ -169,7 +168,6 @@ declare global {
   }
   namespace JSXElements {
     export interface CuiHeaderAttributes extends HTMLAttributes {
-      'monitoring'?: string;
       'siteUrl'?: string;
       'titleHeader'?: string;
     }

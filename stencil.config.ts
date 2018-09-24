@@ -6,7 +6,7 @@ export const config: Config = {
     {components:['cui-alert','cui-content','cui-footer','cui-header','cui-nav-item']}
   ],
   namespace: 'new-cui-demo',
-  globalStyle: 'src/global/app.less',
+  globalStyle: 'src/global/corporate-ui.less',
   outputTargets:[
     {
       type: 'dist'

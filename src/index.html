@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script type="text/javascript" src="https://d31jnweo1ynb8u.cloudfront.net/build/global/3.1.2-CF/js/corporate-ui.js"></script>
   <script src="/build/new-cui-demo.js"></script>
   <link rel="stylesheet" href="/build/new-cui-demo.css">
 </head>
@@ -13,23 +12,25 @@
   <cui-header title-header="Demo page" site-url="#"></cui-header>
 
   <cui-content monitoring="key?default">
-    <div class="col-sm-12">
-      <h4>Variation: Default</h4>
-      <cui-alert open dismissible type="success" content="Well done! You successfully read this important alert message."></cui-alert>
-      <cui-alert open type="info" content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
-      <cui-alert type="warning" content="Warning! Best check yo self, you're not looking too good."></cui-alert>
-      <cui-alert type="danger" content="Oh snap! Change a few things up and try submitting again."></cui-alert>
-      <h4>Variation: Indicator</h4>
-      <cui-alert open dismissible type="success" variation='indicator' content="Well done! You successfully read this important alert message."></cui-alert>
-      <cui-alert type="info" variation='indicator' content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
-      <cui-alert type="warning" variation='indicator' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
-      <cui-alert type="danger" variation='indicator' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
-      <h4>Variation: Callout</h4>
-      <cui-alert type="success" variation='callout' content="Well done! You successfully read this important alert message."></cui-alert>
-      <cui-alert open type="info" variation='callout' content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
-      <cui-alert open dismissible type="warning" variation='callout' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
-      <cui-alert open type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
-    </div>
+    <section>
+        <div class="col-sm-12">
+          <h4>Variation: Default</h4>
+          <cui-alert open dismissible type="success" content="Well done! You successfully read this important alert message."></cui-alert>
+          <cui-alert open type="info" content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
+          <cui-alert type="warning" content="Warning! Best check yo self, you're not looking too good."></cui-alert>
+          <cui-alert type="danger" content="Oh snap! Change a few things up and try submitting again."></cui-alert>
+          <h4>Variation: Indicator</h4>
+          <cui-alert open dismissible type="success" variation='indicator' content="Well done! You successfully read this important alert message."></cui-alert>
+          <cui-alert type="info" variation='indicator' content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
+          <cui-alert type="warning" variation='indicator' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
+          <cui-alert type="danger" variation='indicator' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
+          <h4>Variation: Callout</h4>
+          <cui-alert type="success" variation='callout' content="Well done! You successfully read this important alert message."></cui-alert>
+          <cui-alert open type="info" variation='callout' content="Heads up! This alert needs your attention, but it's not super important."></cui-alert>
+          <cui-alert open dismissible type="warning" variation='callout' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
+          <cui-alert open type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
+        </div>
+    </section>
   </cui-content>
   <cui-footer sticky>
     <cui-nav-item location="#">Career</cui-nav-item>

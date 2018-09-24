@@ -12,7 +12,6 @@ export class CuiContent{
   getGoogleAnalytics(){
     let trackID = this.monitoring.split('?')[1];
     trackID = (trackID=='default')?'UA-125640614-1':trackID;
-    console.log(trackID);
     ga('create', trackID, 'auto');
     ga('send', 'pageview');
   }
@@ -31,7 +30,6 @@ export class CuiContent{
 
       head.appendChild(script);
       head.appendChild(script2);
-      console.log('will load header');
       this.getGoogleAnalytics();
     }
   }

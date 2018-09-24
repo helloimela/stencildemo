@@ -8,15 +8,18 @@ The demo is made using [stencil-component-starter](https://github.com/ionic-team
 
 ### Script tag
 
-- Put a script tag similar to this `<script src='https://unpkg.com/new-cui-demo@1.0.2/dist/new-cui-demo.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/new-cui-demo@version-number/dist/new-cui-demo.js'></script>` in the head of your index.html
+- Put a link tag similar to this `<link rel="stylesheet" href="https://unpkg.com/new-cui-demo@version-number/dist/new-cui-demo.css">` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 - Run `npm install new-cui-demo --save`
 - Put a script tag similar to this `<script src='node_modules/new-cui-demo/dist/new-cui-demo.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<link rel="stylesheet" href='node_modules/new-cui-demo/dist/new-cui-demo.css'>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
 - Run `npm install new-cui-demo --save`
 - Add an import to the npm packages `import new-cui-demo;`
+- Import the css `new-cui-demo.css` file as well
 - Then you can use the element anywhere in your template, JSX, html etc

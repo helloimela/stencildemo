@@ -178,6 +178,47 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface CuiInputFile {
+      'allows': string;
+      'maxFileSize': number;
+      'multiple': boolean;
+      'name': string;
+      'required': boolean;
+    }
+  }
+
+  interface HTMLCuiInputFileElement extends StencilComponents.CuiInputFile, HTMLStencilElement {}
+
+  var HTMLCuiInputFileElement: {
+    prototype: HTMLCuiInputFileElement;
+    new (): HTMLCuiInputFileElement;
+  };
+  interface HTMLElementTagNameMap {
+    'cui-input-file': HTMLCuiInputFileElement;
+  }
+  interface ElementTagNameMap {
+    'cui-input-file': HTMLCuiInputFileElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'cui-input-file': JSXElements.CuiInputFileAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface CuiInputFileAttributes extends HTMLAttributes {
+      'allows'?: string;
+      'maxFileSize'?: number;
+      'multiple'?: boolean;
+      'name'?: string;
+      'required'?: boolean;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface CuiNavItem {
       'location': string;
     }

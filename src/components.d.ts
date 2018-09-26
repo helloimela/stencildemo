@@ -180,6 +180,7 @@ declare global {
   namespace StencilComponents {
     interface CuiInputFile {
       'allows': string;
+      'getLabel': () => void;
       'maxFileSize': number;
       'multiple': boolean;
       'name': string;
@@ -210,6 +211,7 @@ declare global {
       'maxFileSize'?: number;
       'multiple'?: boolean;
       'name'?: string;
+      'onInputChange'?: (event: CustomEvent) => void;
       'required'?: boolean;
     }
   }

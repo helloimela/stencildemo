@@ -1,8 +1,167 @@
-cui-alert{
-  .alert-indicator{
-    margin-right: 3px;
+// SCANIA BOOTSTRAP THEME
+// NAVIGATION
+
+.alert {
+  border-radius: 0;
+
+  &.alert-default{
+    color: #666;
+    background-color: #f5f5f5;
+    border-color: #e5e5e5;
   }
+
+  &.alert-primary {
+    background-color: #041e42;
+    color: #fff;
+
+    &.alert-dismissible .close {
+      top: 0px;
+      right: -21px;
+      color: white;
+      opacity: 1;
+      text-shadow: none;
+    }
+  }
+
+  &.alert-sm {
+    padding: 6px 35px 6px 14px;
+  }
+
+  &.alert-xs {
+    line-height: 25px;
+    padding: 0 8px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .alert-link {
+    color: inherit;
+  }
+
+  strong {
+    color: inherit;
+  }
+
+  .app & {
+     font-size: @alert-font-size-app;
+  }
+  &.alert-indicator {
+    display: inline-block;
+    padding: 6px;
+    content: ' ';
+    background-color: #C8C9C7;
+    font-size: 0;
+    border-radius: 50%;
+    margin: 0;
+    border: none;
+
+    &.alert-primary {
+      background-color: #073472;
+    }
+
+    &.alert-success {
+      background-color: #60bf91;
+    }
+
+    &.alert-info {
+      background-color: #4a8ba4;
+    }
+
+    &.alert-warning {
+      background-color: #faa674;
+    }
+
+    &.alert-danger {
+      background-color: #D6001C;
+    }
+  }
+
+  &.alert-danger-validate {
+      border-color: rgb(204, 16, 64);
+      background-color: rgb(238, 218, 224);
+  }
+
+  &.alert-success-validate {
+    border-color: rgb(68, 168, 120);
+    background-color: rgb(242, 249, 245);
+  }
+
 }
+
+// Callouts are taken from the Boostrap Documentation section and incorporated to the Core CSS.
+
+.callout {
+ border-left: 3px solid #eee;
+ margin: 20px 0;
+ padding: 20px;
+}
+.callout code {
+ background-color: #fff;
+ border-radius: 3px;
+}
+.callout-danger {
+ background-color: #fdf7f7;
+ border-color: #d9534f;
+}
+.callout-danger h4 {
+ color: #d9534f;
+}
+.callout-warning {
+ background-color: #fcf8f2;
+ border-color: #f0ad4e;
+}
+.callout-warning h4 {
+ color: #f0ad4e;
+}
+.callout-info {
+ background-color: #f4f8fa;
+ border-color: #5bc0de;
+}
+.callout-info h4 {
+ color: #5bc0de;
+}
+
+.callout p:last-child {
+ margin-bottom: 0;
+}
+
+.callout h4,
+.callout h4 {
+ margin-top: 0;
+ margin-bottom: 5px;
+}
+
+.text-primary {
+  color: @interaction-primary-app !important;
+}
+a.text-primary:hover {
+  color: darken(@interaction-primary-app, 10%) !important;
+}
+.text-success {
+  color: @interaction-success !important;
+}
+a.text-success:hover {
+  color: darken(@interaction-success, 10%) !important;
+}
+.text-info {
+  color: @interaction-info !important;
+}
+a.text-info:hover {
+  color: darken(@interaction-info, 10%) !important;
+}
+.text-warning {
+  color: @interaction-warning !important;
+}
+a.text-warning:hover {
+  color: darken(@interaction-warning, 10%) !important;
+}
+.text-danger {
+  color: @interaction-danger !important;
+}
+a.text-danger:hover {
+  color: darken(@interaction-danger, 10%) !important;
+}
+
 
 button.close{
   -webkit-appearance: none;

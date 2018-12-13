@@ -2,7 +2,8 @@ import {Component, Prop, Method} from '@stencil/core';
 
 @Component({
   tag: 'cui-footer',
-  styleUrl: 'cui-footer.less'
+  styleUrl: 'cui-footer.less',
+  shadow: true
 })
 export class CuiFooter{
 

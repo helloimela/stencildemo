@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
   <script src="/build/new-cui-demo.js"></script>
-  <link rel="stylesheet" href="/build/new-cui-demo.css">
+  <!-- <link rel="stylesheet" href="/build/new-cui-demo.css"> -->
   <style media="screen">
     body{
       --app-primary-color: #488aff;
+    }
+    footer p{
+      color:red;
     }
   </style>
 </head>
@@ -17,7 +20,7 @@
   <cui-header title-header="Demo page" site-url="#"></cui-header>
 
   <cui-content monitoring="key?default">
-    <section>
+    <section class="light">
         <div class="col-sm-12">
           <h4>Variation: Default</h4>
           <cui-alert open dismissible type="success" content="Well done! You successfully read this important alert message."></cui-alert>
@@ -36,16 +39,8 @@
           <cui-alert open type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
         </div>
     </section>
-    <section>
-      <cui-input-file name="file-input" allows="image" max-file-size=100></cui-input-file>
-      <cui-input-file name="file-input2" allows="files" max-file-size=200></cui-input-file>
-    </section>
   </cui-content>
-  <cui-footer sticky>
-    <cui-nav-item location="#">Career</cui-nav-item>
-    <cui-nav-item location="#">Products</cui-nav-item>
-    <cui-nav-item location="#">About us</cui-nav-item>
-  </cui-footer>
+  <cui-footer sticky></cui-footer>
 
 </body>
 </html>

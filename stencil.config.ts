@@ -19,7 +19,7 @@ export const config: Config = {
   plugins: [
     less({
       injectGlobalPaths:[
-        'src/bootstrap/core.less';
+        'src/bootstrap/variables.less';
       ]
     })
   ]

@@ -9,6 +9,7 @@
   <style media="screen">
     body{
       --app-primary-color: #488aff;
+      display: flex; flex-direction: column;
     }
     footer p{
       color:red;
@@ -17,10 +18,11 @@
 </head>
 <body class="app scania">
 
-  <cui-header title-header="Demo page" site-url="#"></cui-header>
+  <cui-header site-name="Demo page" site-url="#" short-name="My app"></cui-header>
 
   <cui-content monitoring="key?default">
     <section class="light">
+      <div class="row">
         <div class="col-sm-12">
           <h4>Variation: Default</h4>
           <cui-alert open dismissible type="success" content="Well done! You successfully read this important alert message."></cui-alert>
@@ -38,6 +40,7 @@
           <cui-alert open dismissible type="warning" variation='callout' content="Warning! Best check yo self, you're not looking too good."></cui-alert>
           <cui-alert open type="danger" variation='callout' content="Oh snap! Change a few things up and try submitting again."></cui-alert>
         </div>
+      </div>
     </section>
   </cui-content>
   <cui-footer sticky></cui-footer>

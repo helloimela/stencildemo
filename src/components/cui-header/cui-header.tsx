@@ -6,14 +6,21 @@ import { Component, Prop } from '@stencil/core';
 })
 export class CuiHeader{
 
-  @Prop() titleHeader:string;
+  @Prop() siteName:string;
   @Prop() siteUrl: string;
+  @Prop() shortName: string;
 
   render(){
     return(
-      <header class="col-sm-12">
-        <h1><a href={this.siteUrl}>{this.titleHeader}</a></h1>
-      </header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header" short-name={this.shortName}>
+          <a href={this.siteUrl} class="navbar-brand"></a>
+          {this.siteName}
+          <a href={this.siteUrl} class="navbar-symbol"></a>
+          <nav class="nav navbar-nav navbar-right">
+          </nav>
+        </div>
+      </nav>
     );
   }
 }

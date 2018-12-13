@@ -1,19 +1,17 @@
 @import "../../bootstrap/core";
-.sticky cui-content{
-  flex: 1 0 auto;
-}
-:host {
+cui-content {
   display: block;
   flex-grow: 1;
   flex-shrink: 0;
   word-break: break-word;
+  background: #fff;
 
   &.scroll {
     display: flex !important;
     flex-direction: column;
     flex-basis: 0;
 
-    ::content > section {
+    > section {
       overflow: auto;
     }
   }

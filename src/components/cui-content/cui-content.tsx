@@ -36,9 +36,7 @@ export class CuiContent{
 
   render(){
     return(
-      <div class="content">
-        <slot/>
-      </div>
+      <slot/>
     );
   }
 }

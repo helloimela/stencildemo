@@ -8,6 +8,7 @@ import {Component, Prop, Method} from '@stencil/core';
 export class CuiFooter{
 
   @Prop() sticky:boolean=false;
+  @Prop() copyright:string;
 
   @Method()
   getStickyClass(sticky){
@@ -17,11 +18,22 @@ export class CuiFooter{
     }
   }
 
+  @Method()
+  getDate(){
+    return new Date().getFullYear();
+  }
+
   render(){
     return(
       <footer class={this.getStickyClass(this.sticky)}>
-        <p>Copyright &copy;2018 scania.com</p>
-        <slot/>
+        <div class="right-container">
+          <span class="wordmark"></span>
+        </div>
+        <p class="footer-copy-text">
+          <span>
+            &copy; Copyright Scania {this.getDate()} All rights reserved
+          </span>
+        </p>
       </footer>
     );
   }
